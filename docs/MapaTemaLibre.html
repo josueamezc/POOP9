@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Computadora","c":[{"t":"heading","d":2,"p":{"lines":[1,2]},"v":"Sofware","c":[{"t":"heading","d":3,"p":{"lines":[2,3]},"v":"Sistema Operativo","c":[{"t":"heading","d":4,"p":{"lines":[3,4]},"v":"Windows"},{"t":"heading","d":4,"p":{"lines":[4,5]},"v":"Linux"}]},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"Programas de edición","c":[{"t":"heading","d":4,"p":{"lines":[6,7]},"v":"Adobe Premier"},{"t":"heading","d":4,"p":{"lines":[7,8]},"v":"Sony Vegas Pro"}]},{"t":"heading","d":3,"p":{"lines":[8,9]},"v":"Suite de Office","c":[{"t":"heading","d":4,"p":{"lines":[9,10]},"v":"Word"},{"t":"heading","d":4,"p":{"lines":[10,11]},"v":"Excel"},{"t":"heading","d":4,"p":{"lines":[11,12]},"v":"Power Point"},{"t":"heading","d":4,"p":{"lines":[12,13]},"v":"Access"}]},{"t":"heading","d":3,"p":{"lines":[13,14]},"v":"Juegos","c":[{"t":"heading","d":4,"p":{"lines":[14,15]},"v":"League Of Legends"},{"t":"heading","d":4,"p":{"lines":[15,16]},"v":"Valorant"}]},{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"Navegadores web","c":[{"t":"heading","d":4,"p":{"lines":[17,18]},"v":"Google Chrome"},{"t":"heading","d":4,"p":{"lines":[18,19]},"v":"Mozilla Firefox"}]}]},{"t":"heading","d":2,"p":{"lines":[19,20]},"v":"Hardware","c":[{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"Tarjeta gráfica","c":[{"t":"heading","d":4,"p":{"lines":[21,22]},"v":"Nvidia"},{"t":"heading","d":4,"p":{"lines":[22,23]},"v":"AMD"}]},{"t":"heading","d":3,"p":{"lines":[23,24]},"v":"Procesador","c":[{"t":"heading","d":4,"p":{"lines":[24,25]},"v":"Intel"},{"t":"heading","d":4,"p":{"lines":[25,26]},"v":"AMD"}]},{"t":"heading","d":3,"p":{"lines":[26,27]},"v":"Ram","c":[{"t":"heading","d":4,"p":{"lines":[27,28]},"v":"DDR3"},{"t":"heading","d":4,"p":{"lines":[28,29]},"v":"DDR4"},{"t":"heading","d":4,"p":{"lines":[29,30]},"v":"DDR5"}]},{"t":"heading","d":3,"p":{"lines":[30,31]},"v":"Almacenamiento","c":[{"t":"heading","d":4,"p":{"lines":[31,32]},"v":"SSD"},{"t":"heading","d":4,"p":{"lines":[32,33]},"v":"M.2"},{"t":"heading","d":4,"p":{"lines":[33,34]},"v":"HDD"}]},{"t":"heading","d":3,"p":{"lines":[34,35]},"v":"Tarjeta Madre","c":[{"t":"heading","d":4,"p":{"lines":[35,36]},"v":"ATX"},{"t":"heading","d":4,"p":{"lines":[36,37]},"v":"MicroATX"}]},{"t":"heading","d":3,"p":{"lines":[37,38]},"v":"Gabinete","c":[{"t":"heading","d":4,"p":{"lines":[38,39]},"v":"Mid Tower"},{"t":"heading","d":4,"p":{"lines":[39,40]},"v":"Full Tower"}]},{"t":"heading","d":3,"p":{"lines":[40,41]},"v":"Fuente de poder","c":[{"t":"heading","d":4,"p":{"lines":[41,42]},"v":"Certificada"},{"t":"heading","d":4,"p":{"lines":[42,43]},"v":"Genérica"}]}]}]})</script>
+</body>
+</html>
